@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media.css" />
 
     <title>Летний Дворец</title>
   </head>
@@ -31,26 +32,38 @@
           <a href="#" class="text-decoration-none">КЕЙТЕРИНГ</a>
           <a href="#" class="text-decoration-none">ДЛЯ АГЕНТСТВ</a>
         </nav>
-        <button class="bg-transparent border-0">
-          <svg
-            width="40"
-            height="21"
-            viewBox="0 0 40 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line y1="0.5" x2="40" y2="0.5" stroke="black" />
-            <line y1="10.5" x2="40" y2="10.5" stroke="black" />
-            <line y1="20.5" x2="40" y2="20.5" stroke="black" />
-          </svg>
-        </button>
+
+        <div class="mobile d-flex justify-content-center align-items-center">
+          <button class="burger-menu bg-transparent border-0">
+            <svg
+              width="40"
+              height="21"
+              viewBox="0 0 40 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="40" y2="0.5" stroke="black" />
+              <line y1="10.5" x2="40" y2="10.5" stroke="black" />
+              <line y1="20.5" x2="40" y2="20.5" stroke="black" />
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu show">
+          <a href="#">Главная</a>
+          <a href="#">SOFIT EVENT HOUSE</a>
+          <a href="#">МЕРОПРИЯТИЯ</a>
+          <a href="#">ТУРИСТАМ</a>
+          <a href="#">КЕЙТЕРИНГ</a>
+          <a href="#">КЕЙТЕРИНГ</a>
+          <a href="#">ДЛЯ АГЕНТСТВ</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section>
         <div class="container-size">
-          <div class="row">
+          <div class="row col-size">
             <div class="col-6 col-md-4">
               <div class="box box-position">
                 <img src="./image/Rectangle 2.png" alt="" />
@@ -313,7 +326,7 @@
       <section class="card-section">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-wrap">
               <div class="box">
                 <h2 class="text">хотите провести мероприятие?</h2>
                 <p class="subtitle">
@@ -495,7 +508,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-wrap">
               <div
                 class="box input-wrapper d-flex flex-column align-items-start justify-content-center"
               >
@@ -564,5 +577,6 @@
         <p>Facebook — Vkontakte — Instagram</p>
       </div>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>
